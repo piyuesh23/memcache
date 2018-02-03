@@ -1,0 +1,13 @@
+- name: Memcached | Install Memcached
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - memcached
+
+- name: Memcached | Copy over memcached configuration
+  template:
+    src: templates/memcached/memcached.conf.j2
+    dest: "/etc/memcached.conf"
+    owner: root
+    group: root
+    mode: 0600
+  notify: restart memcached
