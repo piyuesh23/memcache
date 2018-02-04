@@ -6,6 +6,6 @@ Installs and configures memcache server with a few security tweaks.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-  memcached:
-  memory_limit: 128M
-  port: 11211
+    memcached:
+    memory_limit: 128M
+    port: 11211

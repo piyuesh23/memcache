@@ -1,3 +1,0 @@
-memcached:
-  memory_limit: 128M
-  port: 11211
